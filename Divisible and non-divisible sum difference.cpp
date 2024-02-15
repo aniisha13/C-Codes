@@ -12,25 +12,20 @@ using namespace std;
 then store the values of both sum in num1 and num2 and return the difference*/
 class Solution {
 public:
-int sum1=0;
-int sum2=0;
+int num1=0;
+int num2=0;
     int differenceOfSums(int n, int m) {
         for(int i=1;i<=n;i++)
         {
             if(i%m!=0)
             {
-                sum1=sum1+i;
+                num1=num1+i;
             }
-        }
-        int num1=sum1;
-         for(int j=1;j<=n;j++)
-        {
-            if(j%m==0)
-            {
-                sum2=sum2+j;
+	    else
+	    {
+                num2=num2+i;
             }
-        }
-        int num2=sum2;
+	}
         return (num1-num2);
     }
 };
