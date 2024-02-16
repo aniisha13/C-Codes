@@ -1,3 +1,4 @@
+//return the smallest positive integer that is a multiple of both 2 and n
 #include<iostream>
 using namespace std;
 
@@ -12,7 +13,7 @@ int main()
 {
 	int n;
 	cout<<"Enter a number: ";
-    cin>>n;
+        cin>>n;
 	Solution s;
 	int result = s.smallestEvenMultiple(n);
 	cout<<result;
